@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
   <body>
-    <form action = "tampil.php" method = "POST">
+    <form action = "tampil.php" method = "POST"/>
       <label>Username</label>
       <br>
       <input name = "nama" type="text"/>
