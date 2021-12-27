@@ -1,5 +1,5 @@
 <?php
 $user = $_POST["nama"];
 $pass = $_POST["pw"];
-echo "Username : ".$user."\nPassword : ".$pass;
+echo "Username : ".$user."<br>Password : ".$pass;
 ?>
