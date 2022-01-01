@@ -10,3 +10,4 @@ if(mysqli_query($connect, $sql)){
   echo "Tabel Berhasil Dibuat";
 }
 ?>
+
