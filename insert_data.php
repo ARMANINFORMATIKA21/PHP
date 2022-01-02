@@ -1,9 +1,10 @@
 //table.php
 <?php
-$nama = $_POST['hewan'];
+$nama = $_POST['nama'];
+$nim = $_POST['nim'];
 $tombol = $_POST['tombol'];
 if(mysqli_query($connect, $sql)){
-$sql = "INSERT INTO nama_table (name) VALUES ('$nama')";
+$sql = "INSERT INTO nama_table values ('$nama','$nim')";
 $eksekusi = mysqli_query($connect,$sql);
 }
 ?>
@@ -13,7 +14,8 @@ $eksekusi = mysqli_query($connect,$sql);
 <html>
    <body>
       <form action = 'table.php' method = 'POST'/>
-      <input name = 'hewan' type = 'text'/>
+      <input name = 'nama' type = 'text'/>
+      <input name = 'nim' type = 'text'/>
       <button type = 'submit' name = 'tombol'>upload</button>
    </body>
 </html>
